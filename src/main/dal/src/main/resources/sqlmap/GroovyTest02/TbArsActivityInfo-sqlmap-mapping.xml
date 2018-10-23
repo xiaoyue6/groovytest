@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" 
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap>
+
+    
+    <resultMap id="RM.TbArsActivityInfo" class="groovy.dal.dataobject.TbArsActivityInfoDO">
+		<result property="id" column="id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="activityEndTime" column="activity_end_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="warmupStartTime" column="warmup_start_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="hasWarmup" column="has_warmup" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="applyTime" column="apply_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="activityStartTime" column="activity_start_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="demoUrl" column="demo_url" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="deleted" column="deleted" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="auditRemark" column="audit_remark" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="auditUserId" column="audit_user_id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="allCategories" column="all_categories" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="applyUserId" column="apply_user_id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="applyEndTime" column="apply_end_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="description" column="description" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="name" column="name" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="activityStatus" column="activity_status" javaType="int" jdbcType="TINYINT"  nullValue="0"  />
+		<result property="needRepublish" column="need_republish" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="auditTime" column="audit_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="activityType" column="activity_type" javaType="int" jdbcType="TINYINT"  nullValue="0"  />
+		<result property="dbCreateTime" column="db_create_time" javaType="java.util.Date" jdbcType="TIMESTAMP"  />
+		<result property="dbUpdateTime" column="db_update_time" javaType="java.util.Date" jdbcType="TIMESTAMP"  />
+		<result property="newEditActivityLabel" column="new_edit_activity_label" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="fileInfoJson" column="file_info_json" javaType="java.lang.String" jdbcType="LONGVARCHAR"  />
+		<result property="publishTime" column="PUBLISH_TIME" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="addDescription" column="ADD_DESCRIPTION" javaType="java.lang.String" jdbcType="LONGVARCHAR"  />
+		<result property="businessEndTime" column="business_end_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="signUpEndTime" column="sign_up_end_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="createUserId" column="create_user_id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="isTestAct" column="is_test_act" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="signUpStartTime" column="sign_up_start_time" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="agreement" column="agreement" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="useDefaultAgreement" column="use_default_agreement" javaType="java.lang.Boolean" jdbcType="BIT"  />
+		<result property="detailDesc" column="detail_desc" javaType="java.lang.String" jdbcType="VARCHAR"  />
+		<result property="applyStatus" column="apply_status" javaType="int" jdbcType="TINYINT"  nullValue="0"  />
+		<result property="buildActivityId" column="build_activity_id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+		<result property="activitySource" column="activity_source" javaType="int" jdbcType="TINYINT"  nullValue="0"  />
+		<result property="creatorSquadId" column="creator_squad_id" javaType="long" jdbcType="BIGINT"  nullValue="0"  />
+    </resultMap>
+    
+
+	
+	<select id="GroovyTest02.TbArsActivityInfo.findById" resultMap="RM.TbArsActivityInfo" >
+    	select  /*GroovyTest02.TbArsActivityInfo.findById*/ id,activity_end_time,warmup_start_time,has_warmup,apply_time,activity_start_time,demo_url,deleted,audit_remark,audit_user_id,all_categories,apply_user_id,apply_end_time,description,name,activity_status,need_republish,audit_time,activity_type,db_create_time,db_update_time,new_edit_activity_label,file_info_json,PUBLISH_TIME,ADD_DESCRIPTION,business_end_time,sign_up_end_time,create_user_id,is_test_act,sign_up_start_time,agreement,use_default_agreement,detail_desc,apply_status,build_activity_id,activity_source,creator_squad_id  from tb_ars_activity_info where id = #id#
+	</select>	
+
+	    
+	
+	
+    
+
+</sqlMap>
+

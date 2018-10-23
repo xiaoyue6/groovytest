@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<table sqlname="tb_ars_activity_info">
+	<!-- 使用primitive类型查询，参数会在查询列表依次列举展开 -->
+	<operation name="findById" paramtype="primitive"
+		multiplicity="one">
+		<sql>
+			select * from tb_ars_activity_info where id = #id#
+		</sql>
+	</operation>
+</table>
